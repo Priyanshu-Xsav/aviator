@@ -19,7 +19,7 @@ const AviatorDisplay: React.FC = () => {
   socket.on("timerUpdate", (data:{ timerValue: number }) => {
       setTimmer(data.timerValue);
       console.log(timer)
-      console.log("data :",data.timerValue);
+      console.log("data :",data);
   });
 
   // Listen for aviator updates from the server
